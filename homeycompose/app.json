@@ -1,0 +1,30 @@
+{
+  "id": "com.qubino-filpilote",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Qubino Fil Pilote",
+	"fr": "Qubino Fil Pilote"
+  },
+  "description": {
+    "en": "Adds support for ZMNHJD1 and ZMNHUD1",
+	"fr": "Support des modules ZMNHJD1 et ZMNHUD1"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Nague Iam",
+    "email": "nague_@hotmail.com"
+  }
+}
