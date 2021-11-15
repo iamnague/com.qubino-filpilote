@@ -1,0 +1,112 @@
+{
+  "actions": [
+    {
+	"id": "zmnhjd1_chauffe_mode_set",
+	"title": {
+	  "en": "Set the mode",
+	  "nl": "Stel de modus in",
+	  "de": "Modus setzen",
+	  "fr": "Définir le Mode de Chauffage",
+	  "it": "Imposta la modalità",
+	  "sv": "Ställ in läget",
+	  "no": "Innstill modusen",
+	  "es": "Configurar el modo",
+	  "da": "Indstil tilstanden"
+	},
+	"args": [
+	  {
+		"name": "chauffe_mode",
+		"type": "dropdown",
+		"values": [
+		 {
+			  "id": "hg",
+			  "title": {
+				"en": "Automatic",
+				"nl": "Automatisch",
+				"de": "Automatisch",
+				"fr": "Hors Gel",
+				"it": "Automatica",
+				"sv": "Automatiskt",
+				"no": "Automatisk",
+				"es": "Automático",
+				"da": "Automatisk"
+			  }
+			},
+			{
+			  "id": "eco",
+			  "title": {
+				"en": "Heat",
+				"nl": "Verhitten",
+				"de": "Heizen",
+				"fr": "Eco",
+				"it": "Calore",
+				"sv": "Värme",
+				"no": "Varme",
+				"es": "Calentar",
+				"da": "Opvarm"
+			  }
+			},
+			{
+			  "id": "confort",
+			  "title": {
+				"en": "Cool",
+				"nl": "Koelen",
+				"de": "Kühlen",
+				"fr": "Confort",
+				"it": "Raffreddamento",
+				"sv": "Kyla",
+				"no": "Avkjøle",
+				"es": "Enfriar",
+				"da": "Køl ned"
+			  }
+			},
+			{
+			  "id": "confort1",
+			  "title": {
+				"en": "Cool",
+				"nl": "Koelen",
+				"de": "Kühlen",
+				"fr": "Confort 1",
+				"it": "Raffreddamento",
+				"sv": "Kyla",
+				"no": "Avkjøle",
+				"es": "Enfriar",
+				"da": "Køl ned"
+			  }
+			},
+			{
+			  "id": "confort2",
+			  "title": {
+				"en": "Cool",
+				"nl": "Koelen",
+				"de": "Kühlen",
+				"fr": "Confort 2",
+				"it": "Raffreddamento",
+				"sv": "Kyla",
+				"no": "Avkjøle",
+				"es": "Enfriar",
+				"da": "Køl ned"
+			  }
+			},
+			{
+			  "id": "off",
+			  "title": {
+				"en": "Off",
+				"nl": "Uit",
+				"de": "Aus",
+				"fr": "Off",
+				"it": "Disattivata",
+				"sv": "Av",
+				"no": "Av",
+				"es": "Desactivado",
+				"da": "Deaktiveret"
+			  }
+			}
+
+		]
+	  }
+	]
+   
+    }
+  ]
+}

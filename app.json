@@ -1,0 +1,490 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.qubino-filpilote",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Qubino Fil Pilote",
+    "fr": "Qubino Fil Pilote"
+  },
+  "description": {
+    "en": "Adds support for ZMNHJD1 and ZMNHUD1",
+    "fr": "Support des modules ZMNHJD1 et ZMNHUD1"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Nague Iam",
+    "email": "nague_@hotmail.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Log to the console",
+          "fr": "Envoyer un log vers la console"
+        },
+        "id": "log-to-the-console"
+      },
+      {
+        "id": "zmnhjd1_chauffe_mode_set",
+        "title": {
+          "en": "Set the mode",
+          "nl": "Stel de modus in",
+          "de": "Modus setzen",
+          "fr": "Définir le Mode de Chauffage",
+          "it": "Imposta la modalità",
+          "sv": "Ställ in läget",
+          "no": "Innstill modusen",
+          "es": "Configurar el modo",
+          "da": "Indstil tilstanden"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=zmnhjd1"
+          },
+          {
+            "name": "chauffe_mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "hg",
+                "title": {
+                  "en": "Automatic",
+                  "nl": "Automatisch",
+                  "de": "Automatisch",
+                  "fr": "Hors Gel",
+                  "it": "Automatica",
+                  "sv": "Automatiskt",
+                  "no": "Automatisk",
+                  "es": "Automático",
+                  "da": "Automatisk"
+                }
+              },
+              {
+                "id": "eco",
+                "title": {
+                  "en": "Heat",
+                  "nl": "Verhitten",
+                  "de": "Heizen",
+                  "fr": "Eco",
+                  "it": "Calore",
+                  "sv": "Värme",
+                  "no": "Varme",
+                  "es": "Calentar",
+                  "da": "Opvarm"
+                }
+              },
+              {
+                "id": "confort",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "confort1",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort 1",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "confort2",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort 2",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus",
+                  "fr": "Off",
+                  "it": "Disattivata",
+                  "sv": "Av",
+                  "no": "Av",
+                  "es": "Desactivado",
+                  "da": "Deaktiveret"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "zmnhud1_chauffe_mode_set",
+        "title": {
+          "en": "Set the mode",
+          "nl": "Stel de modus in",
+          "de": "Modus setzen",
+          "fr": "Définir le Mode de Chauffage",
+          "it": "Imposta la modalità",
+          "sv": "Ställ in läget",
+          "no": "Innstill modusen",
+          "es": "Configurar el modo",
+          "da": "Indstil tilstanden"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=zmnhud1"
+          },
+          {
+            "name": "chauffe_mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "hg",
+                "title": {
+                  "en": "Automatic",
+                  "nl": "Automatisch",
+                  "de": "Automatisch",
+                  "fr": "Hors Gel",
+                  "it": "Automatica",
+                  "sv": "Automatiskt",
+                  "no": "Automatisk",
+                  "es": "Automático",
+                  "da": "Automatisk"
+                }
+              },
+              {
+                "id": "eco",
+                "title": {
+                  "en": "Heat",
+                  "nl": "Verhitten",
+                  "de": "Heizen",
+                  "fr": "Eco",
+                  "it": "Calore",
+                  "sv": "Värme",
+                  "no": "Varme",
+                  "es": "Calentar",
+                  "da": "Opvarm"
+                }
+              },
+              {
+                "id": "confort",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "confort1",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort 1",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "confort2",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Kühlen",
+                  "fr": "Confort 2",
+                  "it": "Raffreddamento",
+                  "sv": "Kyla",
+                  "no": "Avkjøle",
+                  "es": "Enfriar",
+                  "da": "Køl ned"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus",
+                  "fr": "Off",
+                  "it": "Disattivata",
+                  "sv": "Av",
+                  "no": "Av",
+                  "es": "Desactivado",
+                  "da": "Deaktiveret"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "zmnhjd1"
+      },
+      "class": "socket",
+      "capabilities": [
+        "chauffe_mode"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "small": "/drivers/zmnhjd1/assets/images/small.png",
+        "large": "/drivers/zmnhjd1/assets/images/large.png",
+        "xlarge": "/drivers/zmnhjd1/assets/images/xlarge.png"
+      },
+      "zwave": {
+        "manufacturerId": 345,
+        "productTypeId": [
+          4
+        ],
+        "productId": [
+          81
+        ],
+        "learnmode": {
+          "image": "/drivers/zmnhjd1/assets/learnmode.svg",
+          "instruction": {
+            "fr": "Veuillez mettre votre appareil zmnhjd1 en mode 'apprentissage' via l'une des méthodes suivantes:\n\n1. Connecter le périphérique et attendre 5 secondes pour le mode auto-appairage.\n\n2. Appuyez 3 fois sur le bouton d'appairage dans les 3 secondes.",
+            "en": "Enable inclusion mode on the zmnhjd1 via one of the following methods:\n\n1. Connect the device to the power supply and wait 5 seconds for auto-inclusion to start.\n\n2. Toggle the switch connected to input 1 three times within three seconds.",
+            "nl": "Activeer inclusie modus op de zmnhjd1 via een van de volgende methoden:\n\n1. Verbind het apparaat met de stroomvoorziening en wacht 5 seconden tot auto-inclusie start.\n\n2. Schakel de schakelaar verbonden aan input 1 drie keer binnen drie seconden."
+          }
+        },
+        "zwaveAllianceProductId": 1234,
+        "associationGroups": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Z-Wave Plus Lifeline"
+            }
+          }
+        }
+      },
+      "id": "zmnhjd1",
+      "settings": []
+    },
+    {
+      "name": {
+        "en": "zmnhud1"
+      },
+      "class": "socket",
+      "capabilities": [
+        "chauffe_mode"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "small": "/drivers/zmnhud1/assets/images/small.png",
+        "large": "/drivers/zmnhud1/assets/images/large.png",
+        "xlarge": "/drivers/zmnhud1/assets/images/xlarge.png"
+      },
+      "zwave": {
+        "manufacturerId": 345,
+        "productTypeId": [
+          4
+        ],
+        "productId": [
+          82
+        ],
+        "learnmode": {
+          "image": "/drivers/zmnhud1/assets/learnmode.svg",
+          "instruction": {
+            "fr": "Veuillez mettre votre appareil zmnhud1 en mode 'apprentissage' via l'une des méthodes suivantes:\n\n1. Connecter le périphérique et attendre 5 secondes pour le mode auto-appairage.\n\n2. Appuyez 3 fois sur le bouton d'appairage dans les 3 secondes.",
+            "en": "Enable inclusion mode on the zmnhud1 via one of the following methods:\n\n1. Connect the device to the power supply and wait 5 seconds for auto-inclusion to start.\n\n2. Toggle the switch connected to input 1 three times within three seconds.",
+            "nl": "Activeer inclusie modus op de zmnhud1 via een van de volgende methoden:\n\n1. Verbind het apparaat met de stroomvoorziening en wacht 5 seconden tot auto-inclusie start.\n\n2. Schakel de schakelaar verbonden aan input 1 drie keer binnen drie seconden."
+          }
+        },
+        "zwaveAllianceProductId": 1234,
+        "associationGroups": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Z-Wave Plus Lifeline"
+            }
+          }
+        }
+      },
+      "id": "zmnhud1",
+      "settings": []
+    }
+  ],
+  "capabilities": {
+    "chauffe_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Thermostat mode",
+        "nl": "Thermostaat modus",
+        "de": "Thermostat-Modus",
+        "fr": "Mode Chauffage",
+        "it": "Modalità termostato",
+        "sv": "Termostatläge",
+        "no": "Termostatmodus",
+        "es": "Modo del termostato",
+        "da": "Termostattilstand"
+      },
+      "desc": {
+        "en": "Mode of the thermostat",
+        "nl": "Modus van de thermostaat",
+        "de": "Modus des Thermostates",
+        "fr": "Mode du thermostat",
+        "it": "Modalità del termostato",
+        "sv": "Läge för termostaten",
+        "no": "Modus for termostaten",
+        "es": "Modo del termostato",
+        "da": "Tilstand for termostat"
+      },
+      "values": [
+        {
+          "id": "hg",
+          "title": {
+            "en": "Automatic",
+            "nl": "Automatisch",
+            "de": "Automatisch",
+            "fr": "Hors Gel",
+            "it": "Automatica",
+            "sv": "Automatiskt",
+            "no": "Automatisk",
+            "es": "Automático",
+            "da": "Automatisk"
+          }
+        },
+        {
+          "id": "eco",
+          "title": {
+            "en": "Heat",
+            "nl": "Verhitten",
+            "de": "Heizen",
+            "fr": "Eco",
+            "it": "Calore",
+            "sv": "Värme",
+            "no": "Varme",
+            "es": "Calentar",
+            "da": "Opvarm"
+          }
+        },
+        {
+          "id": "confort",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen",
+            "de": "Kühlen",
+            "fr": "Confort",
+            "it": "Raffreddamento",
+            "sv": "Kyla",
+            "no": "Avkjøle",
+            "es": "Enfriar",
+            "da": "Køl ned"
+          }
+        },
+        {
+          "id": "confort1",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen",
+            "de": "Kühlen",
+            "fr": "Confort 1",
+            "it": "Raffreddamento",
+            "sv": "Kyla",
+            "no": "Avkjøle",
+            "es": "Enfriar",
+            "da": "Køl ned"
+          }
+        },
+        {
+          "id": "confort2",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen",
+            "de": "Kühlen",
+            "fr": "Confort 2",
+            "it": "Raffreddamento",
+            "sv": "Kyla",
+            "no": "Avkjøle",
+            "es": "Enfriar",
+            "da": "Køl ned"
+          }
+        },
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus",
+            "fr": "Off",
+            "it": "Disattivata",
+            "sv": "Av",
+            "no": "Av",
+            "es": "Desactivado",
+            "da": "Deaktiveret"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker"
+    }
+  }
+}
