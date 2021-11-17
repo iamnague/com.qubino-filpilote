@@ -37,8 +37,8 @@ class MyDevice extends ZwaveDevice {
 
 
   async changeMode(value) {
+	  this.setWarning(null);
 	  this.setCapabilityValue('chauffe_mode',value)
-	 
 	  let valeur = MODES[value].MAX;
 		try{
 			const commandClass = this.getCommandClass('SWITCH_MULTILEVEL');
@@ -51,7 +51,7 @@ class MyDevice extends ZwaveDevice {
 			this.log('Le mode a été changé: ', value);
 			return true;
 		}catch (err) {
-			this.setUnavailable();
+			this.setWarning("Device not available");
 			return console.error( err );
 		}
 	  
