@@ -14,8 +14,8 @@ class MyDevice extends ZwaveDevice {
    */
   async onNodeInit() {
 	//await this.setUnavailable();
-
     this.registerCapability('chauffe_mode', 'SWITCH_MULTILEVEL');
+    
     this.log('MyDevice has been initialized');
 	
 	//if (this.hasCapability('onoff')==true) {
@@ -32,6 +32,10 @@ class MyDevice extends ZwaveDevice {
 	this.log('Mode de chauffage: ',value);
     this.changeMode(value);	
 	})
+  this.registerCapabilityListener('onoff', async (value) => {
+    this.log('Chauffage on/off: ',value);
+      this.onoff(value);	
+    })
 	
   }
 
@@ -55,6 +59,20 @@ class MyDevice extends ZwaveDevice {
 			return console.error( err );
 		}
 	  
+  }
+
+  async onoff(value) {
+    this.setWarning(null);
+    this.setCapabilityValue('onoff',value)
+    try{
+      if(value==false)
+        this.changeMode('eco');
+      else
+        this.changeMode('confort');
+    }catch (err) {
+      this.setWarning("Device not available");
+    return console.error( err );
+    } 
   }
 
   /**

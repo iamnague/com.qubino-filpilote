@@ -4,7 +4,8 @@
   },
   "class": "socket",
   "capabilities": [
-     "chauffe_mode"
+     "chauffe_mode",
+     "onoff"
     ],
   "platforms": [
     "local"

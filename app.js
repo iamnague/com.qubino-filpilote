@@ -8,7 +8,7 @@ class MyApp extends Homey.App {
    * onInit is called when the app is initialized.
    */
   async onInit() {
-    this.log('Qubino-filpilote a été iniatialisé');
+    this.log('Qubino-filpilote a été initialisé');
 	
 	const card = this.homey.flow.getActionCard('log-to-the-console');
 	card.registerRunListener(async () => {
